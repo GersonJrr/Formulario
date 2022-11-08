@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário do programador</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.google.com/specimen/Montserrat" rel="stylesheet">
+</head>
+<body>
+   <div class="container">
+        <h1 id="titulo">Formulário do programador</h1>
+        <br>
+        <p id="subtitulo"> Nos ajude e complete com suas informações</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset>
+            <div>
+                <label>Nome</label>
+                <input type="text" name="nome" id="nome" > 
+            </div>
+            <br>
+            <div>
+                <label>Idade</label>
+                <input type="number" name="idade" id="idade">
+            </div>
+        </fieldset>
+        <fieldset>
+            <br>
+            <div>
+                <label>GitHub</label>
+                <input type="url" name="github" id="github">
+            </div>
+            <br>
+            <div>
+                <label>Linkedin</label>
+                <input type="url" name="linkedin" id="linkedin">
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <br>
+            <div>
+            <label>Quanto tempo está trabalhando com programação?(Caso seja menos de 1 ano, não responder)</label>
+            <input type="number" name="anos" id="tempo de programação">
+            </div>
+            <br>
+            <div>
+                <label>De qual lado da programação você desenvolve?</label>
+                <br>
+                <input type="radio" name="devweb" value="Frontend"> Front-end
+                <input type="radio" name="devweb" value="Backend"> Back-end
+                <input type="radio" name="devweb" value="Fullstack"> Full-Stack
+            </div>
+            <br>
+            <div id="check">
+                <label>Selecione as tecnoligas que você utiliza:</label>
+                <br>
+                <input type="checkbox" name="tecnologia" value="JavaScript">JavaScript<br>
+                <input type="checkbox" name="tecnologia" value="Go">Go<br>
+                <input type="checkbox" name="tecnologia" value="Java">Java<br>
+                <input type="checkbox" name="tecnologia" value="Node">Node<br>
+                <input type="checkbox" name="tecnologia" value="Python">Python<br>
+                <input type="checkbox" name="tecnologia" value="C#">C#<br>
+                <input type="checkbox" name="tecnologia" value="C++">C++<br>
+                <input type="checkbox" name="tecnologia" value="PHP">PHP<br>
+                <input type="checkbox" name="tecnologia" value="Swift">Swift<br>
+                <input type="checkbox" name="tecnologia" value="SQL">SQL<br>
+                <input type="checkbox" name="tecnologia" value="Ruby">Ruby<br>
+            </div>
+            <br>
+            <div>
+                <Label>Qual seu cargo (nível) atualmente?</Label>
+                <br>
+                <select name="Nível" id="cargo">
+                <option>Junior</option>
+                <option>Pleno</option>
+                <option>Senior</option>
+                </select>
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <br>
+            <div>
+                <label>Como aprendeu programação?</label>
+                <br>
+                <input type="radio" name="questionario" id="Comprei curso">Comprei cursos
+                <input type="radio" name="questionario" id="Videos na internet">Videos na internet
+                <input type="radio" name="questionario" id="Livros">Livros
+                <input type="radio" name="questionario" id="outros">Outros
+            </div>
+        </fieldset>
+        <br>
+
+        <div class="campo">
+            <label>Qual sua dica para quem esta començando na programação agora?</label>
+            <textarea rows="6" style="width: 26em" id="dica" nome="dica"></textarea>
+        </div>
+        <br>
+        <button class="botao" type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
